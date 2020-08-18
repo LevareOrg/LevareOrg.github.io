@@ -197,7 +197,7 @@ body {
     margin-bottom: 30px;
 }
 
-#businesses a, #volunteers a {
+#businesses a.primary, #volunteers a.primary {
     position: relative;
     display: inline-block;
     padding: 0 3px;
@@ -220,10 +220,34 @@ body {
     background-size: 4px 14px;
     text-decoration: none;
     transition: background-size 0.2s;
+    max-width: 50%;
 }
 
-#businesses a:hover, #volunteers a:hover {
+#businesses a.primary:hover, #volunteers a.primary:hover {
     background-size: 4px 50px;
+}
+
+#businesses a.secondary, #volunteers a.secondary {
+    position: relative;
+    width: auto;
+    font-family: var(--headingFont);
+    font-style: normal;
+    font-weight: normal;
+    display: block;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    text-transform: normal;
+    text-align: center;
+    margin-top: 60px;
+    color: #c1c1c1;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+#businesses a.secondary:hover, #volunteers a.secondary:hover {
+    opacity: 0.75;
 }
 
 #footer {
